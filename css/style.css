@@ -49,6 +49,10 @@ table {
 	border-spacing: 0;
 }
 
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 .excuseBackground {
     background-color: #f7786b;
     height: 100vh;
@@ -58,8 +62,22 @@ table {
     left: 0;
     z-index: -1;
 }
+.excuseWrapper {
+    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    margin: 0 auto;
+    z-index: 100;
+    text-align: center;
+}
 #excuse {
-    font-size: 8vw;
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+    font-weight: 700;
+    font-size: 4.5vw;
+    line-height: 120%;
     color: #fff;
 }
 #excuse::first-line {
