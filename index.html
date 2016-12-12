@@ -22,10 +22,11 @@
         <img id="nextBtn" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5MCA0OTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ5MCA0OTA7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMjU2cHgiIGhlaWdodD0iMjU2cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yNDUsMEMxMDkuNywwLDAsMTA5LjcsMCwyNDVzMTA5LjcsMjQ1LDI0NSwyNDVzMjQ1LTEwOS43LDI0NS0yNDVTMzgwLjMsMCwyNDUsMHogTTMxNSwyODcuN2wtOTAuNSw5MC41bC00Mi43LTQyLjcgICBsOTAuNS05MC41bC05MC41LTkwLjVsNDIuNy00Mi43bDkwLjUsOTAuNWw0Mi43LDQyLjdMMzE1LDI4Ny43eiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
 
         <div id="excuse" class="excuse"></div>
+    <div class="excuseBackground"></div>
+
     </div>
     <button id="prev">Prev</button>
     <button id="next">Next</button>
-    <div class="excuseBackground"></div>
     <script>
         function readTextFile(file) {
             var rawFile = new XMLHttpRequest();
@@ -59,6 +60,7 @@
                             } else {
                                 initExcuse(i);
                             }
+                            $('.excuseWrapper').toggleClass('excuseAnimation');
                         });
 
                         function initExcuse(i) {

@@ -52,15 +52,27 @@ table {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #f3e06f;
 }
 .excuseWrapper {
     height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
     z-index: 100;
     text-align: center;
+    -webkit-clip-path: inset(0% 0 0% 0);
+    clip-path: inset(5% 0 15% 0);
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition:    all 0.7s ease-out;
+    -o-transition:      all 0.7s ease-out;
+    -ms-transition:     all 0.7s ease-out;
+    transition:         all 0.7s ease-out;
+}
+.excuseAnimation {
+-webkit-clip-path: inset(50% 0 50% 0);
+    clip-path: inset(50% 0 50% 0);
 }
 .excuseBackground {
     background-color: #f7786b;
