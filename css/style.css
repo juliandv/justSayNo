@@ -100,6 +100,8 @@ body {
     height: auto;
     position: absolute;
     right: 5%;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 @media (min-width:1400px){
