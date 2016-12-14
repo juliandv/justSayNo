@@ -22,8 +22,8 @@
                             }
                         });
 
-                        var element = document.getElementById("nextBtn"); //grab the element
-                        element.onclick = function () { //asign a function
+                        var nextBtnDiv = document.getElementById("nextBtn"); //grab the element
+                        nextBtnDiv.onclick = function () { //asign a function
                             i++;
                             if (i == excuseArr.length) {
                                 initExcuse(0);
