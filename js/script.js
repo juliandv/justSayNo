@@ -22,7 +22,8 @@
                             }
                         });
 
-                        $('#next').click(function () {
+                        var element = document.getElementById("nextBtn"); //grab the element
+                        element.onclick = function () { //asign a function
                             i++;
                             if (i == excuseArr.length) {
                                 initExcuse(0);
@@ -31,7 +32,8 @@
                                 initExcuse(i);
                             }
                             $('.excuseWrapper').toggleClass('excuseAnimation');
-                        });
+
+                        }
 
                         function initExcuse(i) {
                             $('#excuse').empty();
