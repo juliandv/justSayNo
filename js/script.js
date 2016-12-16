@@ -31,13 +31,15 @@
                             } else {
                                 initExcuse(i);
                             }
-                            $('.excuseWrapper').toggleClass('excuseAnimation');
+                            $('.excuseWrapperNext').toggleClass('excuseAnimation');
 
                         }
 
                         function initExcuse(i) {
-                            $('#excuse').empty();
-                            $('#excuse').append(excuseArr[i]);
+                            $('#excuse1').empty();
+                            $('#excuse1').append(excuseArr[i]);
+                            $('#excuse2').empty();
+                            $('#excuse2').append(excuseArr[(i+1)]);
                         }
 
                     }

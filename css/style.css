@@ -52,18 +52,23 @@ table {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f3e06f;
+    background-color: #fff;
 }
 .excuseWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    z-index: 100;
     text-align: center;
+}
+.excuseWrapperNext {
     -webkit-clip-path: inset(0% 0 0% 0);
-    clip-path: inset(5% 0 15% 0);
+    clip-path: inset(0% 0 0% 0);
     -webkit-transition: all 0.7s ease-out;
     -moz-transition:    all 0.7s ease-out;
     -o-transition:      all 0.7s ease-out;
@@ -74,16 +79,24 @@ body {
 -webkit-clip-path: inset(50% 0 50% 0);
     clip-path: inset(50% 0 50% 0);
 }
-.excuseBackground {
+.excuseBackground{
     background-color: #f7786b;
     height: 100vh;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
 }
-#excuse {
+.excuseBackground2{
+    z-index: 2;
+    background-color: #f3e06f;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#excuse1 {
     display: inline-block;
     width: 70%;
     text-align: left;
@@ -92,7 +105,18 @@ body {
     line-height: 120%;
     color: #fff;
 }
-#excuse::first-line {
+
+#excuse2 {
+    z-index: 3;
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+    font-weight: 700;
+    font-size: 5vw;
+    line-height: 120%;
+    color: #fff;
+}
+#excuse1::first-line, #excuse2::first-line {
     color: #1a1a1a;
 }
 #nextBtn {
@@ -102,12 +126,12 @@ body {
     right: 5%;
     top: 50%;
     transform: translate(0, -50%);
-    z-index: 1000;
+    z-index: 100;
     cursor: pointer;
 }
 
 @media (min-width:1400px){
-    #excuse {
+    #excuse1 {
         font-size: 76px;
     }
     #nextBtn {
