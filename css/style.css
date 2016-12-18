@@ -80,6 +80,7 @@ body {
     clip-path: inset(50% 0 50% 0);
 }
 .excuseBackground{
+    z-index: 1;
     background-color: #f7786b;
     height: 100vh;
     width: 100%;
@@ -88,7 +89,7 @@ body {
     left: 0;
 }
 .excuseBackground2{
-    z-index: 2;
+    z-index: 3;
     background-color: #f3e06f;
     height: 100vh;
     width: 100%;
@@ -108,7 +109,7 @@ body {
 }
 
 #excuse2 {
-    z-index: 3;
+    z-index: 4;
     display: inline-block;
     width: 70%;
     text-align: left;
