@@ -1,4 +1,4 @@
-        function readTextFile(file) {
+function readTextFile(file) {
             var rawFile = new XMLHttpRequest();
             rawFile.open("GET", file, false);
             rawFile.onreadystatechange = function () {
@@ -49,6 +49,12 @@
         }
 
         readTextFile("/excuses.txt");
+
+
+
+
+
+
 
 
         window.onerror = function () {
