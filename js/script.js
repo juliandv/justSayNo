@@ -43,7 +43,7 @@ function readTextFile(file) {
 //                            } else {
 //                                initExcuse(i);
 //                            }
-                            $('.excuseWrapperNext').toggleClass('excuseAnimation');
+                            $('#excuseWrapper2').toggleClass('excuseAnimation');
 
                         }
 
